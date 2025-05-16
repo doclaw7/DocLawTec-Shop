@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DoclawTec Electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href = "https://thaka.bing.com/th/id/OIG2.9RWV1ERb8saTn5spB6r_?w=286&h=286&c=6&r=0&o=5&dpr=1.3&pid=ImgGn">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="side-nav">
+      <ul>
+        <li class="active"><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>DoclawTec Electronics</h1>
+      <input type="text" id="search" placeholder="Search products..." />
+      <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <main>
+      <section id="home" class="container active">
+        <div class="welcome-content">
+          <h2>Welcome to DoclawTec Electronics</h2>
+          <p>Your one-stop shop for premium electronics and accessories</p>
+          <p>We offer a wide range of products from the latest smartphones 
+            to powerful laptops and essential tech accessories. Our mission 
+            is to provide you with the best quality products and exceptional 
+            customer service.</p>
+          <div class="featured-categories">
+            <div class="category-card">
+              <h3>Smartphones</h3>
+              <p>Latest models from top brands</p>
+            </div>
+            <div class="category-card">
+              <h3>Laptops</h3>
+              <p>Powerful computing solutions</p>
+            </div>
+            <div class="category-card">
+              <h3>Accessories</h3>
+              <p>Essential tech accessories</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <h2>About DoclawTec Electronics</h2>
+        <div class="about-content">
+            <article class="about-card">
+                <h3>Our Story</h3>
+                <p>Founded in 2024, DoclawTec Electronics has been at the forefront 
+                  of providing cutting-edge technology solutions to our customers. 
+                  We believe in making premium electronics accessible to everyone while 
+                  maintaining the highest standards of quality and service.</p>
+            </article>
+
+            <article class="about-card">
+                <h3>Our Mission</h3>
+                <p>To provide our customers with the latest and most innovative electronic 
+                  products while ensuring exceptional customer service and technical support. 
+                  We strive to be your trusted partner in all your technology needs.</p>
+            </article>
+
+            <article class="about-card">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Genuine products from authorized dealers</li>
+                    <li>Expert technical support</li>
+                    <li>Competitive pricing</li>
+                    <li>Warranty on all products</li>
+                    <li>Fast delivery and installation</li>
+                </ul>
+            </article>
+
+            <article class="about-card">
+                <h3>Our Team</h3>
+                <p>Led by Dr. Lawrence Ouma, our team consists of experienced professionals who are passionate 
+                  about technology and dedicated to providing the best service to our customers. You know What, try us to see yourself. </p>
+            </article>
+        </div>
+      </section>
+
+      <section id="smartphones" class="container">
+        <h2>Smartphones</h2>
+        <p>Explore the latest models from top brands.</p>
+      </section>
+
+      <section id="laptops" class="container">
+        <h2>Laptops</h2>
+        <p>Discover powerful computing solutions for work, programmings  and playing Games.</p>
+      </section>
+
+      <section id="accessories" class="container">
+        <h2>Computer Accessories</h2>
+        <p>Find essential tech accessories to complement your devices.</p>
+      </section>
+
+      <section id="product-list" class="container">
+        <!-- The products to the e commerce are added through the products.js file -->
+      </section>
+
+      <section id="cart-page" class="container hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+      </section>
+
+      <!-- Updated Contact Section -->
+      <section id="contact" class="container tab-content">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-details">
+              <p><i class="icon">📱</i> WhatsApp: <a href="https://wa.me/254718237631">+254 718 237 631</a></p>
+              <p><i class="icon">📞</i> Call: <a href="tel:+254743914347">+254 743 914 347</a></p>
+              <p><i class="icon">✉️</i> Email: <a href="mailto:doclaw0@gmail.com">doclaw0@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <h3>Business Hours</h3>
+            <div class="business-hours">
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Send us a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="container">
+    <p>&copy;<i> DoclawTec Electronic Industry</i></p>
+    <p>&copy; <i> Managed by <strong> Dr.Lawrence Ouma</strong></i></p>
+    <p>&copy; <i>All rights reserved</i></p>
+  </footer>
+
+  <!-- Cart Popup -->
+  <div class="cart-overlay"></div>
+  <div class="cart-popup">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">KES 0.00</span>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
